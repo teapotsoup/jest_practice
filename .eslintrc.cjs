@@ -1,0 +1,26 @@
+module.exports = {
+  env: { browser: true, es2020: true },
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "react-app",
+    "react-app/jest",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended",
+  ],
+  parserOptions: { ecmaVersion: "latest", sourceType: "module" },
+  settings: { react: { version: "18.2" } },
+  plugins: ["testing-library", "jest-dom", "react-refresh"],
+  rules: {
+    // "react-refresh/only-export-components": "warn",
+    // "react/jsx-no-bind": 0,
+    // "no-shadow": 0,
+    // "import/no-extraneous-dependencies": 0,
+    // "import/prefer-default-export": 0,
+    // "import/no-cycle": 0,
+    // "react/prop-types": 0,
+    // "no-undef": 0,
+  },
+};
